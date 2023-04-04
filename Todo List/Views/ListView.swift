@@ -30,9 +30,22 @@ struct ListView: View {
                 .padding(20)
                 
                 List {
+                    HStack {
+                        Image(systemName: "circle")
+                        Text("Study for Physics quiz")
+                    }
+                    HStack {
+                        Image(systemName: "checkmark.circle")
+                        Text("Finish ComputerScience Assinments")
+                    }
                     
+                    HStack {
+                        Image(systemName: "circle")
+                        Text("Go for a run")
+                    }
                 }
             }
+            .navigationTitle("Todo")
         }
     }
 }
